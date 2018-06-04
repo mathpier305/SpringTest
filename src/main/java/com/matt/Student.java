@@ -1,22 +1,21 @@
 package com.matt;
 
 public class Student {
-
-	private String StudentName;
-
-	public String getStudentName() {
-		return StudentName;
-	}
-
-	public void setStudentName(String studentName) {
-		StudentName = studentName;
+	private Address address;
+	
+	public Student(Address address) {
+		this.address = address;
 	}
 	
-	public void studentInit() {
-		System.out.println("Student Init method called...." );
+	public Address getAddress() {
+		return address;
 	}
-	
-	public void studentDestroy() {
-		System.out.println("Student Destroy method called ..." );
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public void showInfo() {
+		System.out.println("Student address is "+address.getAddress());
 	}
 }
