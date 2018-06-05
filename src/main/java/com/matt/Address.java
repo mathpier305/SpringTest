@@ -6,8 +6,8 @@ public class Address {
 	
 	private String address;
 	
-	public Address() {
-		address = "Address is the address ";
+	public Address(String address) {
+		this.address =address;
 	}
 
 	public String getAddress() {
