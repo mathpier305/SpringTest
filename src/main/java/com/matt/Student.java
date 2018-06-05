@@ -1,7 +1,14 @@
 package com.matt;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Student {
+	
+	@Autowired
 	private Address address;
+	
+	public Student() {
+	}
 	
 	public Student(Address address) {
 		this.address = address;
@@ -10,6 +17,7 @@ public class Student {
 	public Address getAddress() {
 		return address;
 	}
+
 
 	public void setAddress(Address address) {
 		this.address = address;
